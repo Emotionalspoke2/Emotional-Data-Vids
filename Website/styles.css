@@ -1,0 +1,190 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #007BFF, #00BFFF);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+header p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #f0f0f0;
+}
+
+.buttons-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.buttons-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons button {
+    padding: 12px 24px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.buttons button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.responsabili, .universita {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.responsabili h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.responsabili ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.responsabili li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.universita-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.universita-link {
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border-radius: 50%;
+}
+
+.universita-link img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.universita-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    color: #777;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .responsabili, .universita {
+        padding: 15px;
+    }
+
+    .responsabili h3 {
+        font-size: 1.3em;
+    }
+
+    .universita-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .universita-link {
+        margin-bottom: 10px;
+    }
+}
