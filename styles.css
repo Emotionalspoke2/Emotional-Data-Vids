@@ -58,7 +58,12 @@ header p {
 /* Sezione bottoni */
 .buttons-section {
     text-align: center;
+
     margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--text-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .buttons-section h3 {
